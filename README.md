@@ -1,22 +1,28 @@
-## NestJS authentication passport-jwt
+## NestJS authentication with passport-jwt
 
 ## Description
 <p>
  This authentication is include a access token for a protected route and refresh token when access token is expired.
 </p>
+
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
 ## Requirement
-<p>Create database called <strong>nestjs</strong></p>
+<p>Database called <strong>nestjs</strong></p>
+
 ## Installation
 
 ```bash
+#Clone this repository
 $ git clone https://github.com/DanarCahyadi12/nestjs-authentication.git
 
+#Change directory
 $ cd nestjs-authentication
 
+#Install dependencies
 $ npm install
 
+#Migrate prisma tables to your database
 $ npx prisma migrate dev --name initial_migrate
 
 ```
