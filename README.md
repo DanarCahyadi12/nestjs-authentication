@@ -75,7 +75,7 @@ $ npm run start:prod
 <img src="https://user-images.githubusercontent.com/110749286/277599825-0fd3cfc0-1383-4710-acce-6fe782d874fb.png">
 <br>
 
-<p>4. Paste access token in headers authorization in user route. <strong>Note: Make sure it contain a Bearer before the token.</strong></p>
+<p>4. Paste access token in headers authorization user route. <strong>Note: Make sure it contain a Bearer before the token.</strong></p>
 <img src="https://user-images.githubusercontent.com/110749286/277600080-9bcc570a-0bb0-4025-8591-921082065d1f.png">
 <br>
 
