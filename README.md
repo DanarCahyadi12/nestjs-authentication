@@ -80,13 +80,14 @@ $ npm run start:prod
 <br>
 
 <p>5. If your access token is valid or not expired, server will give your credentials like your email, name and id</p>
+<img src="https://user-images.githubusercontent.com/110749286/277608305-bf8b5534-9e1b-489f-b347-ec2f503f9ef5.png">
 <br>
 
 <p>6. If your access token is expired: <ul>
   <li>Login to your account</li>
   <li>Copy the refresh token</li>
   <li>Go to auth/token route</li>
-  <li>Paste refresh token in authorization headers: Bearer <your_refresh_token></li>
+  <li>Paste refresh token in authorization headers. <strong>Make sure contain a Bearer before the token</strong></li>
   <li>Server will give you a access token</li>
  </ul> </p>
 
