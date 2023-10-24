@@ -1,4 +1,4 @@
-## NestJS authentication with passport-jwt
+## NestJS authentication with passport-jwt and prisma
 
 ## Description
 <p>
