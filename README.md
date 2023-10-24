@@ -62,18 +62,33 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
-## Test
+## Quick tutorial with postman
+<p>1. Sign up first </p>
+<img src="https://user-images.githubusercontent.com/110749286/277598748-7762bb6a-b7e4-430b-9d15-74fce6d37607.png">
+<br>
 
-```bash
-# unit tests
-$ npm run test
+<p>2. Login to your account</p>
+<img src="https://user-images.githubusercontent.com/110749286/277598993-b4afa5fc-f988-409c-813d-7706594cfee6.png">
+<br>
 
-# e2e tests
-$ npm run test:e2e
+<p>3. After login success. Server will give you access token and refresh token</p>
+<img src="https://user-images.githubusercontent.com/110749286/277599825-0fd3cfc0-1383-4710-acce-6fe782d874fb.png">
+<br>
 
-# test coverage
-$ npm run test:cov
-```
+<p>4. Paste access token in headers authorization in user route. <strong>Note: Make sure it contain a Bearer before the token.</strong></p>
+<img src="https://user-images.githubusercontent.com/110749286/277600080-9bcc570a-0bb0-4025-8591-921082065d1f.png">
+<br>
+
+<p>5. If your access token is valid or not expired, server will give your credentials like your email, name and id</p>
+<br>
+
+<p>6. If your access token is expired: <ul>
+  <li>Login to your account</li>
+  <li>Copy the refresh token</li>
+  <li>Go to auth/token route</li>
+  <li>Paste refresh token in authorization headers: Bearer <your_refresh_token></li>
+  <li>Server will give you a access token</li>
+ </ul> </p>
 
 ## Support
 
