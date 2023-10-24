@@ -4,7 +4,7 @@ import { SignUpDto } from './dto/sign-up.dto';
 import { SignUpResponseInterface } from './interfaces/sign-up.interfaces';
 import { SkipAuth } from '../auth/decorators/auth.decorator';
 
-@Controller('register')
+@Controller('signup')
 export class SignupController {
   constructor(private signUpService: SignupService) {}
 
