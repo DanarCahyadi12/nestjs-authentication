@@ -21,7 +21,11 @@ export class SignupController {
       const response: SignUpResponseInterface = {
         status: 'success',
         message: 'Sign up successfully',
-        data: user,
+        data: {
+          id: user.id,
+          name: user.name,
+          email: user.email,
+        },
       };
 
       return response;
