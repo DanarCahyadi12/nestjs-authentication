@@ -29,23 +29,23 @@ $ npx prisma migrate dev --name initial_migrate
 ## Routes
 ```bash
 # sign up route
-$ http://localhost:3000/signup
+http://localhost:3000/signup
 
 ```
 
 ```bash
 # login route
-$ http://localhost:3000/auth/login
+http://localhost:3000/auth/login
 
 ```
 ```bash
-# Get access toke  route
-$ http://localhost:3000/auth/token
+# Get access token  route
+http://localhost:3000/auth/token
 
 ```
 ```bash
 # Protected route
-$ http://localhost:3000/user
+http://localhost:3000/user
 
 ```
 
