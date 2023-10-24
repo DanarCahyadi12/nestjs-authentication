@@ -4,8 +4,7 @@
 <p>
  This authentication is include a access token for a protected route and refresh token when access token is expired.
 </p>
-
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+<p>Access token will expired after 20 seconds <p>
 
 ## Requirement
 <p>Database called <strong>nestjs</strong></p>
