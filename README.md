@@ -13,17 +13,39 @@
 ## Installation
 
 ```bash
-#Clone this repository
+# clone this repository
 $ git clone https://github.com/DanarCahyadi12/nestjs-authentication.git
 
-#Change directory
+# change directory
 $ cd nestjs-authentication
 
-#Install dependencies
+# install dependencies
 $ npm install
 
-#Migrate prisma tables to your database
+# migrate prisma tables to your database
 $ npx prisma migrate dev --name initial_migrate
+
+```
+## Routes
+```bash
+# sign up route
+$ http://localhost:3000/signup
+
+```
+
+```bash
+# login route
+$ http://localhost:3000/auth/login
+
+```
+```bash
+# Get access toke  route
+$ http://localhost:3000/auth/token
+
+```
+```bash
+# Protected route
+$ http://localhost:3000/user
 
 ```
 
