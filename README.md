@@ -98,7 +98,6 @@ $ npm run start:prod
 <p>7. Logout 
   <ul>
    <li>Get access token</li>
-   <li>Copy access token</li>
    <li>Paste in authorization headers logout route. <strong>Make sure contain a Bearer before the token</strong></li>
    <li>Send request</li>
  </ul>
