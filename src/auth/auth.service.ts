@@ -9,9 +9,10 @@ import { LoginDTO } from './dto/login.dto';
 import {
   LoginResponseInterface,
   RefreshTokenInterface,
-  UserPayloadInterface,
 } from './interfaces/login.interface';
+import { UserPayloadInterface } from '../user/interfaces/user.interface';
 import * as bcrypt from 'bcrypt';
+import { LogoutInterface } from './interfaces/logout.interface';
 
 @Injectable()
 export class AuthService {
@@ -92,5 +93,17 @@ export class AuthService {
         accessToken: accessToken,
       },
     };
+  }
+
+  async logout(idUser: number): Promise<LogoutInterface> {
+    try {
+      await this.userService.updateTokenUser(idUser, null);
+      return {
+        status: 'success',
+        message: 'Logout successfully',
+      };
+    } catch (error) {
+      if (error) throw error;
+    }
   }
 }

@@ -32,4 +32,10 @@ export class AuthController {
     const refreshToken = user[1].refreshToken;
     return await this.authService.refreshToken(userId, refreshToken);
   }
+
+  @Get('logout')
+  async logout(@User('sub') userId: number) {
+    console.log('USERID: ', userId);
+    return await this.authService.logout(userId);
+  }
 }
