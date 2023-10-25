@@ -43,6 +43,11 @@ http://localhost:3000/auth/token
 
 ```
 ```bash
+# logout route
+http://localhost:3000/auth/logout
+
+```
+```bash
 # Protected route
 http://localhost:3000/user
 
@@ -90,6 +95,14 @@ $ npm run start:prod
   <li>Server will give you a access token</li>
  </ul> </p>
 
+<p>7. Logout 
+  <ul>
+   <li>Get access token</li>
+   <li>Copy access token</li>
+   <li>Paste in authorization headers logout route. <strong>Make sure contain a Bearer before the token</strong></li>
+   <li>Send request</li>
+ </ul>
+</p>
 ## Support
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
