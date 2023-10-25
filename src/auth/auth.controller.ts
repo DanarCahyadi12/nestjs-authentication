@@ -9,7 +9,6 @@ import {
 import { AuthService } from './auth.service';
 import { LoginDTO } from './dto/login.dto';
 import { JwtRefreshAuthGuard } from './guards/jwt-refresh-auth.guard';
-// import { Request } from 'express';
 import { SkipAuth } from './decorators/auth.decorator';
 import { User } from '../user/decorators/user.decorator';
 
