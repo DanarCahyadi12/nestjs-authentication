@@ -14,9 +14,3 @@ export interface RefreshTokenInterface {
     accessToken: string;
   };
 }
-
-export interface UserPayloadInterface {
-  sub: number;
-  name: string;
-  email: string;
-}
