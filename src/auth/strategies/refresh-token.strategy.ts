@@ -1,7 +1,7 @@
 import { PassportStrategy } from '@nestjs/passport';
 import { Strategy, ExtractJwt } from 'passport-jwt';
 import { Request } from 'supertest';
-import { UserPayloadInterface } from '../interfaces/login.interface';
+import { UserPayloadInterface } from '../../user/interfaces/user.interface';
 import { Injectable } from '@nestjs/common';
 
 @Injectable()
