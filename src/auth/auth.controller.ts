@@ -35,7 +35,6 @@ export class AuthController {
 
   @Get('logout')
   async logout(@User('sub') userId: number) {
-    console.log('USERID: ', userId);
     return await this.authService.logout(userId);
   }
 }
